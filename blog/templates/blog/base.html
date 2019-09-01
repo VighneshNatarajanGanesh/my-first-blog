@@ -6,14 +6,16 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        
     </head>
     <body>
             <div class="page-header">
                 {% if user.is_authenticated %}
                     <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
                 {% endif %}
-                <h1>Vighnesh N Ganesh blog</a></h1>
+                <h1>Vighnesh N Ganesh blog</h1>
             </div>
+            <br><br><br><br><br><br><br><br>    
             <div class="content container">
                 <div class="row">
                     <div class="col-md-8">
@@ -22,9 +24,8 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                Special thanks to djangogirls.org
-
-            </footer>
+            <div class="page-footer">
+                <a href="https://djangogirls.org/"><h1>Special thanks to djangogirls.org</h1></a>
+            </div>
           </body>
 </html>
